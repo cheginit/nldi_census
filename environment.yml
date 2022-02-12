@@ -1,0 +1,71 @@
+name: nldi
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python>=3.9
+
+  # async_retriever
+  - aiodns
+  - aiohttp>=3.8.1
+  - aiohttp-client-cache>=0.5.1
+  - aiosqlite
+  - brotli
+  - cchardet
+  - cytoolz
+  - ujson
+
+  # pygeoogc deps
+  - defusedxml
+  - owslib
+  - pydantic
+  - pyyaml
+  - pyproj>=1.2
+  - requests
+  - requests-cache>=0.8
+  - shapely
+  - urllib3
+
+  # pygeoutils deps
+  - dask-core
+  - geopandas>=0.8
+  - netcdf4
+  - numpy>=1.17
+  - pygeos
+  - rasterio>=1.2
+  - scipy
+  - xarray>=0.18
+  - rioxarray>=0.8
+
+  # pynhd deps
+  - networkx>=2.5
+  - pandas>=1.0
+  - pyarrow
+
+  # pygeohydro deps
+  - folium
+  - lxml
+  - matplotlib-base>=3.0
+
+  # optional deps to speed up xarray and pydaymet
+  - bottleneck
+  - numba
+
+  # plot deps
+  - cartopy
+  - mapclassify
+  - contextily
+  - jupyterlab_widgets
+  - ipywidgets
+  - proplot
+
+  # nldi_cencus deps
+  - rio-tiler
+
+  - pip
+  - pip:
+    - git+https://github.com/cheginit/async_retriever.git
+    - git+https://github.com/cheginit/pygeoogc.git
+    - git+https://github.com/cheginit/pygeoutils.git
+    - git+https://github.com/cheginit/pynhd.git
+    - git+https://github.com/cheginit/pygeohydro.git
