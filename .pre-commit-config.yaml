@@ -98,12 +98,9 @@ repos:
     hooks:
       - id: nbqa-isort
         name: Format notebooks; sort imports by isort
-        files: notebooks
 
       - id: nbqa-black
         name: Format notebooks; reformat by black
-        files: notebooks
 
       - id: nbqa-pyupgrade
         name: Format notebooks; upgrade syntax to Python 3.7+ by pyupgrade
-        files: notebooks
